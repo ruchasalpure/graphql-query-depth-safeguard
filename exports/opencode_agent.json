@@ -1,8 +1,0 @@
-{
-  "agent_id": "graphql-query-depth-safeguard",
-  "protocol": "opencode/v1",
-  "capabilities": [
-    "autonomous",
-    "governed"
-  ]
-}

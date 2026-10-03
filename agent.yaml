@@ -1,26 +1,30 @@
 spec_version: "0.1.0"
-name: "graphql-query-depth-safeguard"
-version: "1.0.0"
-category: "devtools"
+name: graphql-query-depth-safeguard
+version: 1.0.0
+description: Validates incoming GraphQL AST depth, cyclic relation expansions, and computational field complexity multipliers before database execution.
 author: "Rucha Salpure"
-description: "Validates incoming GraphQL AST depth, cyclic relation expansions, and computational field complexity multipliers before database execution"
-capabilities:
-  - "ast-complexity-scoring"
-  - "autonomous-decision-making"
-  - "explainable-auditing"
-  - "multi-agent-collaboration"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
 skills:
-  - "ast-complexity-scoring"
-tools:
-  - "python_executor"
-  - "audit_logger"
-  - "schema_validator"
+  - ast-complexity-scoring
+tools: []
+delegation:
+  mode: auto
 runtime:
-  environment: "python3.11"
-  memory_limit: "4GB"
-  timeout_seconds: 300
-governance:
-  audit_logging: true
-  human_in_the_loop: false
-  maker_checker: true
-  explainability_required: true
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - devtools
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/ruchasalpure/graphql-query-depth-safeguard"

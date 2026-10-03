@@ -1,6 +1,0 @@
-app:
-  name: "graphql-query-depth-safeguard"
-  environment: "production"
-  logging:
-    level: "INFO"
-    format: "json"
